@@ -1,0 +1,286 @@
+body{
+margin:0;
+width:1400px;
+}
+
+
+.logo {
+background-color:#fff; 
+height:110px;
+margin:0;
+padding:0;
+text-align:center;
+}
+
+
+.logo p{
+margin:0;
+padding:30px;
+font-size:40px; 
+font-family: Trajan;
+color: #006699;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #006699;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	font-size:25px;
+}
+
+li a:hover:not(.active) {
+    background-color:#ffbb33;
+}
+
+li a.active {
+    color: white;
+    background-color: #ffbb33;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #006699;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #ffbb33;
+	color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.header {
+    background-image:url(../Images/banner3.jpg);
+    padding:0;
+	height:550px;
+	background-repeat:no-repeat;
+}
+
+.name{
+padding:0;
+height:50px;
+background-color: #006699;}
+
+.name h1 {
+margin: 0;
+color: white;
+text-align: center;
+text-transform: uppercase;
+padding:8px;
+}
+
+
+/* Conteneur de base pour tab */
+.tabs {
+	min-width: 420px;
+	max-width: 1030px;
+	padding: 0px;
+	margin: 25px auto;
+}
+/* Style de section avec contenu */
+.tabs>section {
+	display: none;
+	height:650px;
+	padding: 15px;
+	background: #fff;
+	border:2px solid #006699;
+}
+.tabs>section>p {
+	margin: 0 0 5px;
+	line-height: 1.5;
+	color: black;
+}
+
+/* checkbox - none */
+.tabs>input {
+	display: none;
+	position: absolute;
+}
+/* Style des tabs */
+.tabs>label {
+	display: inline-block;
+	margin: 0 0 -1px;
+	padding: 15px 30px;
+	font-weight: 600;
+	text-align: center;
+	color: #aaa;
+	border: 0px solid #ddd;
+	border-width: 1px 1px 1px 1px;
+	background: #f1f1f1;
+	border-radius: 5px 5px 0 0;
+}
+/* Les icons de Font Awesome format Unicode */
+.tabs>label:before {
+	font-family: fontawesome;
+	font-weight: normal;
+	margin-right: 10px;
+}
+.tabs>label[for*="1"]:before {
+	content: "\f17b";
+}
+.tabs>label[for*="2"]:before {
+	content: "\f13b";
+}
+.tabs>label[for*="3"]:before {
+	content: "\f17a";
+}
+.tabs>label[for*="4"]:before {
+	content: "\f13c";
+}
+/* Changement des style quand on veut change le tab */
+ 
+.tabs>label:hover {
+	color: #888;
+	cursor: pointer;
+}
+/* Style pour le tab active */
+.tabs>input:checked+label {
+	color: #555;
+	border-top:2px solid #ffbb33;
+	border-right:2px solid #ffbb33;
+	border-left:2px solid #ffbb33;
+	border-bottom: 1px solid #fff;
+	background: #ffbb33;
+}
+/* Activation de section avec pseudoclass :checked */
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3, #tab4:checked~#content-tab4 {
+	display: block;
+}
+/* Enleve le text quand on diminue le resolution 
+* il reste juste les icons
+*/
+ 
+@media screen and (max-width: 680px) {
+	.tabs>label {
+		font-size: 0;
+	}
+	.tabs>label:before {
+		margin: 0;
+		font-size: 18px;
+	}
+}
+/* Changemet du padding pour les ecran petit*/
+
+@media screen and (max-width: 400px) {
+	.tabs>label {
+		padding: 15px;
+	}
+}
+
+<!-- Style Tableau -->
+ 
+.t01 {
+    border-collapse: collapse;
+    width: 60%;
+}
+
+.t01 th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+.t01 tr:nth-child(even){background-color: #f2f2f2}
+
+.t01 th {
+    background-color: #006699;
+    color: #ffbb33;
+	font-size:15px;
+	font-family: Arial, serif;
+} 
+
+.bottom{
+	background-image: url(../Images/banner5.jpg);
+	height:400px;
+	padding:0;
+	margin:0;
+}
+
+.bottom h1{
+	text-align: left;
+	color: #006699;
+	font-size: 45px !important;
+	padding-left:50px;
+	padding-top:50px;
+	margin:0;}
+
+.subscribe{
+	border: 2px solid #006699;
+	padding:15px;
+	width:450px;
+	float: left;
+	border-radius: 10px;
+	margin-left:20px;
+	}
+
+.subscribe input{
+	width: 250px;
+	height: 50px;
+	padding: 2px;
+	border: none;
+	background-color: transparent;
+	}
+
+.button{
+	width: 120px;
+	height: 55px;
+	border-radius: 10px;
+	padding: 2px;
+	cursor: pointer;
+	background-color: #ffbb33;
+	color: white;
+	font: 25px bold;
+	float: right;}
+	
+.button:hover{
+	background-color:#006699;
+}
+
+footer{
+	height: 90px;
+	background-color: #006699;
+	margin: 0;
+	text-align: center;
+	}
+	
+footer a{
+    font-size: 24px !important;
+	color: white;
+	padding:8px 16px!important;
+	text-decoration:none;
+}
+
+footer p{
+	margin:0;
+	color: white;
+	font-size: 14px;
+	padding:15px;
+}

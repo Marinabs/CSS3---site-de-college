@@ -1,0 +1,234 @@
+body{
+margin:0;
+width:1400px;
+}
+
+
+.logo {
+background-color:#fff; 
+height:110px;
+margin:0;
+padding:0;
+text-align:center;
+}
+
+
+.logo p{
+margin:0;
+padding:30px;
+font-size:40px; 
+font-family: Trajan;
+color: #006699;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #006699;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	font-size:25px;
+}
+
+li a:hover:not(.active) {
+    background-color:#ffbb33;
+}
+
+li a.active {
+    color: white;
+    background-color: #ffbb33;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #006699;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #ffbb33;
+	color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.header {
+    background-image:url(../Images/banner3.jpg);
+    padding:0;
+	height:550px;
+}
+
+.name{
+	padding:0;
+	height:50px;
+	background-color: #006699;
+}
+
+.name h1 {
+	margin: 0;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	padding:8px;
+}	
+
+.temoin{
+	margin:0;
+	padding:55px;
+}
+
+.temoin1{
+	background-color: #e0e0eb;
+	border-left: 8px solid #a2a2c3;
+	width: 900px;
+	height: 400px;
+	box-shadow: 10px 10px 5px grey;
+}
+
+.temoin1 p.paragraph1{
+	width:500px;
+	margin-left:10px;
+	margin-top:-20px;
+}
+
+.temoin2{
+	background-color: #e0e0eb;
+	border-right: 8px solid #a2a2c3;
+	width: 1000px;
+	height: 400px;
+	margin:55px 0 0 125px;
+	box-shadow: -10px 10px 5px grey;
+}
+
+.temoin2 p.paragraph2{
+	width:500px;
+	margin-left:0;
+	margin-top:-20px;
+	float:right;
+}
+
+.temoin3{
+	background-color: #e0e0eb;
+	border-left: 8px solid #a2a2c3;
+	width: 1000px;
+	height: 400px;
+	margin:55px 0 0 240px;
+	box-shadow: 10px 10px 5px grey;
+}
+
+.temoin3 p.paragraph3{
+	width:500px;
+	margin-left:10px;
+	margin-top:-20px;
+	margin-right:10px ;
+}
+ 
+.temoin4{
+	background-color: #e0e0eb;
+	border-right: 8px solid #a2a2c3;
+	width: 1000px;
+	height: 400px;
+	margin:55px 0 0 355px;
+	box-shadow: -10px 10px 5px grey;
+}
+
+.temoin4 p.paragraph4{
+	width:500px;
+	margin-left:0;
+	margin-top:-20px;
+	float:right;
+}
+
+.bottom{
+	background-image: url(../Images/banner5.jpg);
+	height:400px;
+	padding:0;
+	margin:0;
+}
+
+.bottom h1{
+	text-align: left;
+	color: #006699;
+	font-size: 45px !important;
+	padding-left:50px;
+	padding-top:50px;
+	margin:0;}
+
+.bottom .subscribe{
+	border: 2px solid #006699;
+	padding:15px;
+	width:450px;
+	float: left;
+	border-radius: 10px;
+	margin-left:20px;
+	}
+
+.subscribe input{
+	width: 250px;
+	height: 50px;
+	padding: 2px;
+	border: none;
+	background-color: transparent;
+	}
+
+.subscribe .button{
+	width: 120px;
+	height: 55px;
+	border-radius: 10px;
+	padding: 2px;
+	cursor: pointer;
+	background-color: #ffbb33;
+	color: white;
+	font: 25px bold;
+	float: right;}
+	
+.subscribe .button:hover{
+	background-color:#006699;
+}
+
+footer{
+	height: 90px;
+	background-color: #006699;
+	margin: 0;
+	text-align: center;
+	}
+	
+footer a{
+    font-size: 24px !important;
+	color: white;
+	padding:8px 16px!important;
+	text-decoration:none;
+}
+
+footer p{
+	margin:0;
+	color: white;
+	font-size: 14px;
+	padding:15px;
+}	   
